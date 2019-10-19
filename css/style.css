@@ -81,8 +81,8 @@ h6 {
 .section-title h2 {
 	display: inline-block;
 	position: relative;
-	margin-bottom: 20px;
-	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-top: 50px;
 	padding-bottom: 2px;
 	line-height: normal;
 }
@@ -402,6 +402,10 @@ h6 {
 	margin-top: 15px;
 }
 
+.header-buttons{
+	text-align: center;
+}
+
 /*---------------------
 	Hero section
 -----------------------*/
@@ -417,6 +421,7 @@ h6 {
 	font-size: 170px;
 	line-height: normal;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .hero-text p {
@@ -426,6 +431,9 @@ h6 {
 
 .hero-image {
 	padding-top: 70px;
+	height: auto;
+	width: auto;
+	text-align: center;
 }
 
 .hero-info h2 {
@@ -445,7 +453,7 @@ h6 {
 .hero-info ul li span {
 	color: #40424a;
 	display: inline-block;
-	min-width: 220px;
+	min-width: 150px;
 }
 
 .hero-info ul li:last-child {
@@ -819,7 +827,7 @@ h6 {
 .home-three-style .main-left-area,
 .home-four-style .main-left-area {
 	background: #f2f7f8;
-	padding-top: 200px;
+	padding-top: auto;
 	padding-right: 80px;
 	padding-left: 80px;
 }
@@ -831,8 +839,8 @@ h6 {
 
 .home-three-style .main-right-area,
 .home-four-style .main-right-area {
-	padding-top: 200px;
-	padding-left: 110px;
+	padding-top: 70px;
+	padding-left: 90px;
 }
 
 .home-three-style .resume-list li,
@@ -857,13 +865,13 @@ h6 {
 	padding: 50px 80px;
 	background: transparent;
 	position: absolute;
-	width: 100%;
+	width: 120%;
 	z-index: 1;
 }
 
 .home-three-style .hero-image,
 .home-four-style .hero-image {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .home-three-style .hero-text h2,
