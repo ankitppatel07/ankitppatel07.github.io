@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-	margin-top: 30px;
+	margin-top: 20px;
 	font-size: 30px;
 }
 
@@ -56,6 +56,7 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
+	display: block;
 }
 
 ul,
@@ -82,7 +83,7 @@ h6 {
 	display: inline-block;
 	position: relative;
 	margin-bottom: 10px;
-	margin-top: 50px;
+	margin-top: 25px;
 	padding-bottom: 2px;
 	line-height: normal;
 }
@@ -164,20 +165,22 @@ h6 {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
-	min-width: 213px;
+	min-width: 150px;
 	min-height: 20px;
 	text-align: center;
-	padding: 20px 10px 15px;
+	padding: 10px;
 	position: relative;
 	background-color: #fff;
-	margin-right: 10px;
 	border: 2px solid #40424a;
 	color: #40424a;
 	font-weight: 700;
+	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 .site-btn:hover {
-	color: #40424a;
+	color: #132ea7;
+	background-color: #f4f4f4;
 }
 
 .circle-progress {
@@ -398,9 +401,9 @@ h6 {
 	line-height: normal;
 }
 
-.header-buttons a {
+/* .header-buttons a {
 	margin-top: 15px;
-}
+} */
 
 .header-buttons{
 	text-align: center;
@@ -430,7 +433,7 @@ h6 {
 }
 
 .hero-image {
-	padding-top: 70px;
+	padding-top: 50px;
 	height: auto;
 	width: auto;
 	text-align: center;
@@ -509,6 +512,17 @@ h6 {
 /*---------------------
 	Resume section
 ----------------------*/
+ul, li {
+	list-style-position: inside;
+}
+
+.resume-section {
+	border: 2px solid #f4f4f4;
+	padding-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
 .resume-section.with-bg {
 	background-image: url(../img/resume-bg.jpg);
 	background-repeat: no-repeat;
@@ -839,8 +853,8 @@ h6 {
 
 .home-three-style .main-right-area,
 .home-four-style .main-right-area {
-	padding-top: 70px;
-	padding-left: 90px;
+	padding-top: 100px;
+	padding-left: 60px;
 }
 
 .home-three-style .resume-list li,
@@ -1456,6 +1470,6 @@ h6 {
 		padding-left: 15px;
 	}
 	.home-four-style .main-left-area {
-		padding-top: 250px;
+		padding-top: 0px;
 	}
 }
