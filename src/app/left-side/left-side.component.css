@@ -1,0 +1,45 @@
+.left-side {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* border: 2px solid white; */
+    height: 100%;
+    background-color: rgb(65, 16, 222, 0.7);
+}
+
+.profile-animation {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    /* border: 5px solid rgb(124, 14, 51); */
+    box-shadow: 0 0 0 5px rgb(65, 16, 222);
+    animation: loader 1.25s infinite;
+}
+
+@keyframes loader {
+    0% {
+        border: 5px solid rgb(124, 14, 51);
+        box-shadow: 0 0 0 5px rgb(65, 16, 222);
+    }
+    100% {
+        border: 5px solid rgb(65, 16, 222);
+        box-shadow: 0 0 0 5px rgb(124, 14, 51);
+    }
+  }
+
+h1,h2,h3,h4,h5,h6,p, ul, li {
+    color: white;
+}
+
+.first-hr {
+    border-top: 5px solid white;
+    margin: 0px;
+}
+.second-hr {
+    border-top: 2px solid white;
+    margin: 0px;
+}
+
+br {
+    color: white;
+}

@@ -12,4 +12,12 @@ export class EducationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirectTo(value: string): void {
+    if(value == "BU") {
+      window.open("https://www.binghamton.edu");
+    } else if("MU") {
+      window.open("https://mu.ac.in/");
+    }
+  }
+
 }
