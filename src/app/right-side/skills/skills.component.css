@@ -24,6 +24,17 @@ br {
     max-width: 75px;
 }
 
-.skill:hover {
-    background-color: rgba(243, 243, 243, 0.5);
+
+.skills-animation {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-color: rgb(65, 16, 222);
+    border-width: 5px;
+    border-style: solid;
+}
+
+.skills-animation:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(243, 243, 243, 0.5);
 }
