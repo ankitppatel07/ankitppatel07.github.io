@@ -9,6 +9,7 @@ import { ExperienceComponent } from './right-side/experience/experience.componen
 import { CertificationsComponent } from './right-side/certifications/certifications.component';
 import { EducationComponent } from './left-side/education/education.component';
 import { SocialComponent } from './left-side/social/social.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SocialComponent } from './left-side/social/social.component';
     SocialComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

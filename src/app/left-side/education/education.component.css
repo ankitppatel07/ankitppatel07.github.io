@@ -1,20 +1,3 @@
-h1,h2,h3,h4,h5,h6,p, ul, li {
-    color: white;
-}
-
-.first-hr {
-    border-top: 5px solid white;
-    margin: 0px;
-}
-.second-hr {
-    border-top: 2px solid white;
-    margin: 0px;
-}
-
-br {
-    color: white;
-}
-
 .logo {
     height: auto;
     width: 100%;
@@ -25,5 +8,5 @@ br {
 }
 
 .education:hover {
-    background-color: rgba(243, 243, 243, 0.5);
+    background-color: rgba(86, 156, 214, 0.5);
 }
