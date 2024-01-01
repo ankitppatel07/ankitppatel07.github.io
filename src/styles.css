@@ -7,8 +7,8 @@ html, body {
 }
 
 body {
-    background-image: url('/assets/background/background.jpg');
-    background-size: cover;
+    /* background-image: url('/assets/background/background.jpg');*/
+    /* background-size: cover;  */
 }
 
 .use-font {

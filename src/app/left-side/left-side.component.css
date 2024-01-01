@@ -4,26 +4,30 @@
     /* justify-content: center; */
     /* border: 2px solid white; */
     height: 100%;
-    background-color: rgb(65, 16, 222, 0.7);
+    /* background-color: rgb(65, 16, 222, 0.7); */
+    background-color: black;
 }
 
 .profile-animation {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    /* border: 5px solid rgb(124, 14, 51); */
-    box-shadow: 0 0 0 5px rgb(65, 16, 222);
+    /* box-shadow: 0 0 0 5px rgb(65, 16, 222); */
     animation: loader 1.25s infinite;
 }
 
 @keyframes loader {
     0% {
-        border: 5px solid rgb(124, 14, 51);
-        box-shadow: 0 0 0 5px rgb(65, 16, 222);
+        /* border: 5px solid rgb(124, 14, 51);
+        box-shadow: 0 0 0 5px rgb(65, 16, 222); */
+        border: 5px solid rgba(0, 255, 123, 0.662);
+        box-shadow: 0 0 0 5px rgb(0, 0, 0);
     }
     100% {
-        border: 5px solid rgb(65, 16, 222);
-        box-shadow: 0 0 0 5px rgb(124, 14, 51);
+        /* border: 5px solid rgb(65, 16, 222);
+        box-shadow: 0 0 0 5px rgb(124, 14, 51); */
+        border: 5px solid rgb(0, 0, 0);
+        box-shadow: 0 0 0 5px rgba(0, 255, 123, 0.662);
     }
   }
 
