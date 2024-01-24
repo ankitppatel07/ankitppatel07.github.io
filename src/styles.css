@@ -21,12 +21,12 @@ h2,h3,h5,h6,p, ul, li {
 }
 
 .first-hr {
-    border-top: 3px solid  rgba(255, 181, 24) !important;
+    border-top: 3px solid  rgb(255, 181, 24) !important;
     margin: 0px;
     opacity: 1;
 }
 .second-hr {
-    border-top: 3px solid  rgba(206, 114, 60) !important;
+    border-top: 3px solid  rgb(206, 114, 60) !important;
     margin: 0px;
     opacity: 1;
 }

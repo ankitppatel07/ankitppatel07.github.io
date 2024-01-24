@@ -1,5 +1,4 @@
 <div class="container p-2">
-    
     <div class="row text-center">
         <h4><strong>Skills:</strong></h4>
     </div>
@@ -15,27 +14,185 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4 p-2">
-                <img class="skills-animation" src="../../assets/homepage/front-end.jpg">
+                <img class="skills-animation" src="../../assets/homepage/front-end.jpg" 
+                data-bs-toggle="modal" data-bs-target="#frontendModal">
             </div>
             <div class="col-md-4 p-2">
-                <img class="skills-animation" src="../../assets/homepage/back-end.jpg">
+                <img class="skills-animation" src="../../assets/homepage/back-end.jpg" data-bs-toggle="modal" data-bs-target="#backendModal">
             </div>
             <div class="col-md-4 p-2">
-                <img class="skills-animation" src="../../assets/homepage/database.png">
+                <img class="skills-animation" src="../../assets/homepage/database.png" data-bs-toggle="modal" data-bs-target="#databaseModal">
             </div>
         </div>
     
         <div class="row text-center">
             <div class="col-1"></div>
             <div class="col-md-5 p-2">
-                <img class="skills-animation" src="../../assets/homepage/cicd.jpg">
+                <img class="skills-animation" src="../../assets/homepage/cicd.jpg" data-bs-toggle="modal" data-bs-target="#cicdModal">
             </div>
             <div class="col-md-5 p-2">
-                <img class="skills-animation" src="../../assets/homepage/tools.png">
+                <img class="skills-animation" src="../../assets/homepage/tools.png" data-bs-toggle="modal" data-bs-target="#toolsModal">
             </div>
             <div class="col-1"></div>
         </div>
     </div>
-    
 </div>
 
+
+<div class="modal fade" id="frontendModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: rgb(40, 40, 40);">
+        <div class="modal-header">
+            <h4><strong>Front-end Technologies:</strong></h4>
+            <button type="button" class="btn-close button1" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col text-center">
+                    <img class="skills-animation" src="../../assets/homepage/front-end/angular.jpg">
+                </div>
+                <div class="col text-center">
+                    <img class="skills-animation" src="../../assets/homepage/front-end/typescript.png">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col text-center">
+                    <img class="skills-animation" src="../../assets/homepage/front-end/javascript.png">
+                </div>
+                <div class="col text-center">
+                    <img class="skills-animation" src="../../assets/homepage/front-end/html.jpg">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="backendModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgb(40, 40, 40);">
+            <div class="modal-header">
+                <h4><strong>Back-end Technologies:</strong></h4>
+                <button type="button" class="btn-close button1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/back-end/java.jpg">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/back-end/spring.png">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/back-end/junit5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="databaseModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgb(40, 40, 40);">
+            <div class="modal-header">
+                <h4><strong>Database Technologies:</strong></h4>
+                <button type="button" class="btn-close button1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/database/sql.png">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/database/oracledb.png">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/database/mysql.png">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/database/mongodb.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="cicdModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgb(40, 40, 40);">
+            <div class="modal-header">
+                <h4><strong>CICD Technologies:</strong></h4>
+                <button type="button" class="btn-close button1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/ci-cd/git.jpg">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/ci-cd/jenkins.jpg">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/ci-cd/docker.jpg">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/ci-cd/kubernetes.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="toolsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgb(40, 40, 40);">
+            <div class="modal-header">
+                <h4><strong>Tools:</strong></h4>
+                <button type="button" class="btn-close button1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/tools/vscode.png">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/tools/eclipse.png">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/tools/spring_tool_suite.png">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/tools/sql_server.jpg">
+                    </div>
+                    <div class="col text-center">
+                        <img class="skills-animation" src="../../assets/homepage/tools/jira.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

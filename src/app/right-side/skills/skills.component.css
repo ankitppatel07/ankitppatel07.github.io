@@ -10,13 +10,30 @@
 .skills-animation {
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 35%;
     border-color: rgba(86, 156, 214, 1);
     border-width: 2px;
     border-style: solid;
 }
 
 .skills-animation:hover {
-    border-radius: 50%;
+    border-radius: 35%;
     box-shadow: 0px 0px 5px 5px rgba(86, 156, 214, 1);
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgb(40, 40, 40, 0.5);
+    height: 200%;
+    width: 100%;
+}
+
+.button1 {
+    background-color: rgb(206, 114, 60);
+    opacity: 1;
+}
+
+.button1:hover {
+    background-color: rgb(255, 181, 24);
+    opacity: 1;
 }
