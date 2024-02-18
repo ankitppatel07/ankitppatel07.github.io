@@ -16,7 +16,7 @@ export class CertificationsComponent implements OnInit {
     if(value == "oracle_cert") {
       window.open("https://www.youracclaim.com/badges/3f63cf0e-e8f0-4847-978d-23d9d8125002/linked_in_profile");
     } else if("aws_cert") {
-      window.open("https://aws.amazon.com/verification");
+      window.open("https://cp.certmetrics.com/amazon/en/public/verify/credential/0CM3X3MBFFQ1QJSZ");
     }
   }
 
