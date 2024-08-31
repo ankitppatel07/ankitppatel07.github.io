@@ -7,6 +7,11 @@
     max-width: 75px;
 }
 
+.certifications {
+    transition: 0.5s;
+}
+
 .certifications:hover {
+    cursor: pointer;
     background-color: rgba(86, 156, 214, 0.5);
 }

@@ -7,6 +7,11 @@
     max-width: 100px;
 }
 
+.education {
+    transition: 0.5s;
+}
+
 .education:hover {
+    cursor: pointer;
     background-color: rgba(86, 156, 214, 0.5);
 }
