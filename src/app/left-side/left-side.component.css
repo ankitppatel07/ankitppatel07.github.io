@@ -12,19 +12,14 @@
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    /* box-shadow: 0 0 0 5px rgb(65, 16, 222); */
     animation: loader 3s ease-in-out infinite alternate;
 }
 
 @keyframes loader {
     from {
-        /* border: 5px solid rgb(124, 14, 51);
-        box-shadow: 0 0 0 5px rgb(65, 16, 222); */
-        box-shadow: 0 0 10px 10px rgb(86, 156, 214);
+        box-shadow: 0 0 5px 5px rgb(86, 156, 214);
     }
     to {
-        /* border: 5px solid rgb(65, 16, 222);
-        box-shadow: 0 0 0 5px rgb(124, 14, 51); */
-        box-shadow: 0 0 0 0 rgb(0, 0, 0);
+        box-shadow: 0 0 0 0 rgb(40, 40, 40);
     }
   }
