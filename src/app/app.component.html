@@ -1,11 +1,22 @@
 <div class="warp-overlay" *ngIf="(warpService.warpState$ | async) === 'warping'"></div>
 
-<div [@warpTrigger]="warpService.warpState$ | async" (@warpTrigger.done)="onWarpEnd()">
+<div [@warpTrigger]="warpService.warpState$ | async" (@warpTrigger.done)="warpService.resetWarp()">
     <router-outlet></router-outlet>
 </div>
 
-<div class="time-turner-anchor" (click)="warpService.triggerWarp()"
-    title="Click to visit the old version of the website.">
+<div class="modal-backdrop" *ngIf="warpService.showConfirm$ | async">
+    <div class="time-modal">
+        <!-- <h3>Initiate Time Travel?</h3> -->
+        <h3>Are you sure you want to travel to the <strong>old website</strong>? </h3>
+
+        <div class="modal-actions">
+            <button (click)="warpService.cancelTravel()" class="btn-cancel">Stay here</button>
+            <button (click)="warpService.confirmTravel()" class="btn-confirm">Travel</button>
+        </div>
+    </div>
+</div>
+
+<div class="time-turner-anchor" (click)="warpService.toggleTimeTravel()">
     <div class="time-turner-wrapper">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="75px" height="75px">
             <g class="axis outer-axis">

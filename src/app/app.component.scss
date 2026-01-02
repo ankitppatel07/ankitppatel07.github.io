@@ -1,3 +1,5 @@
+@use '../styles.scss';
+
 .time-turner-wrapper {
     width: 100px;
     height: 100px;
@@ -178,5 +180,69 @@
 
     50% {
         opacity: 0.7;
+    }
+}
+
+
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    /* Above the Time-Turner */
+    backdrop-filter: blur(5px);
+}
+
+.time-modal {
+    background: styles.$navy;
+    // border: 2px solid styles.$lightest-slate;
+
+    /* Time-Turner Gold */
+    padding: 2rem;
+    border-radius: 8px;
+    // color: white;
+    text-align: center;
+    box-shadow: 0 0 140px 20px styles.$lightest-slate;
+
+    h3 {
+        color: styles.$lightest-slate;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .modal-actions {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            // font-weight: bold;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-confirm {
+            // background: #D4AF37;
+            color: black;
+        }
+
+        .btn-cancel {
+            background: #333;
+            color: white;
+        }
     }
 }
