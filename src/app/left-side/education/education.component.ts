@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-education',
-    templateUrl: './education.component.html',
-    styleUrls: ['./education.component.css'],
-    standalone: false
+  selector: 'app-education',
+  templateUrl: './education.component.html',
+  styleUrls: ['./education.component.css'],
+  standalone: false
 })
 export class EducationComponent implements OnInit {
 
@@ -14,9 +14,9 @@ export class EducationComponent implements OnInit {
   }
 
   redirectTo(value: string): void {
-    if(value == "BU") {
+    if (value == "BU") {
       window.open("https://www.binghamton.edu");
-    } else if("MU") {
+    } else if (value == "MU") {
       window.open("https://mu.ac.in/");
     }
   }

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-social',
-    templateUrl: './social.component.html',
-    styleUrls: ['./social.component.css'],
-    standalone: false
+  selector: 'app-social',
+  templateUrl: './social.component.html',
+  styleUrls: ['./social.component.css'],
+  standalone: false
 })
 export class SocialComponent implements OnInit {
 
@@ -14,9 +14,9 @@ export class SocialComponent implements OnInit {
   }
 
   redirectTo(value: string): void {
-    if(value == "github") {
+    if (value == "github") {
       window.open("https://github.com/ankitppatel07");
-    } else if("linkedin") {
+    } else if (value === "linkedin") {
       window.open("https://www.linkedin.com/in/ankitppatel07/");
     }
   }
