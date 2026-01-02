@@ -1,0 +1,25 @@
+import { TestBed } from '@angular/core/testing';
+import { OldHomeComponent } from './old-home.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [
+        OldHomeComponent
+      ],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(OldHomeComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have as title 'portfolio-website'`, () => {
+    const fixture = TestBed.createComponent(OldHomeComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('portfolio-website');
+  });
+
+});
