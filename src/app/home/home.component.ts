@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { trigger, transition, style, animate, keyframes } from '@angular/animations';
-import { Router } from '@angular/router';
 import { WarpService } from '../_shared/services/warp.service';
 
 @Component({
@@ -36,8 +35,7 @@ export class HomeComponent {
 
   socials = [
     { title: 'GitHub', icon: 'bi-github', url: 'https://github.com/ankitppatel07' },
-    { title: 'LinkedIn', icon: 'bi-linkedin', url: 'https://www.linkedin.com/in/ankitppatel07/' },
-    // { icon: 'bi-twitter', url: '#' }
+    { title: 'LinkedIn', icon: 'bi-linkedin', url: 'https://www.linkedin.com/in/ankitppatel07/' }
   ];
 
   jobs = [
@@ -107,28 +105,13 @@ export class HomeComponent {
     }
   ];
 
-
   openPage(url: string | undefined): void {
     window.open(url, '_blank');
   }
 
   warpState = 'idle';
 
-  // triggerWarp() {
-  //   if (this.warpState === 'warping') return;
-  //   this.warpState = 'warping';
-
-  //   setTimeout(() => {
-  //     this.router.navigate(['/old-home']);
-  //   }, 1000);
-  // }
-
-  // // This function resets the state automatically when the animation ends
-  // onWarpEnd(event: any) {
-  //   this.warpState = 'idle';
-  // }
-
-  onWarpEnd() {
+  onWarpEnd(): void {
     this.warpService.resetWarp();
   }
 
