@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         # Replace YOUR_REPO_NAME with your actual repository name
-        run: npx ng build --base-href /ankitppatel07.github.io/
+        run: npx ng build #--base-href /ankitppatel07.github.io/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.7.6
