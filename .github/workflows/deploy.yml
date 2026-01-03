@@ -1,0 +1,30 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master # Or 'main' depending on your repo
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-base: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        # Replace YOUR_REPO_NAME with your actual repository name
+        run: npx ng build --base-href /ankitppatel07.github.io/
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs/browser # Points to the new browser folder
+          branch: gh-pages
