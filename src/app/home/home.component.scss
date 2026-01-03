@@ -9,7 +9,7 @@
         display: flex;
         justify-content: space-between;
         gap: 1rem;
-        padding: 0 6rem;
+        padding: 0 3rem;
     }
 }
 
@@ -24,7 +24,7 @@ header {
         flex-direction: column;
         justify-content: space-between;
         height: 100vh;
-        width: 45%;
+        width: 48%;
         padding: 6rem 0;
     }
 
@@ -95,7 +95,7 @@ header {
 
 // Right Content Area
 main {
-    // padding-top: 5rem;
+    padding-top: 2rem;
 
     @media (min-width: 1024px) {
         width: 52%;
@@ -119,7 +119,7 @@ section {
 
     &:hover {
         cursor: pointer;
-        color: styles.$green;
+        color: styles.$green-1;
 
         .arrow-svg {
             transform: translate(5px, -5px);
@@ -159,7 +159,7 @@ section {
 .arrow-svg {
     /* This ensures the movement is smooth */
     transition: transform 0.3s ease-in-out;
-    fill: styles.$green;
+    fill: styles.$green-1;
 }
 
 // Experience Cards
@@ -182,7 +182,7 @@ section {
 
 
         .job-title {
-            color: styles.$green;
+            color: styles.$green-1;
         }
 
         .arrow-svg {
@@ -233,7 +233,7 @@ section {
 
     .tag {
         background-color: styles.$green-tint;
-        color: styles.$green;
+        color: styles.$green-1;
         font-size: 0.75rem;
         padding: 0.25rem 0.75rem;
         border-radius: 999px;
@@ -287,4 +287,16 @@ section {
 
 footer {
     margin: 3rem;
+    padding: 4rem 0;
+}
+
+
+p {
+    a {
+        color: styles.$light-slate-1;
+    }
+
+    a:hover {
+        color: styles.$green-1;
+    }
 }
