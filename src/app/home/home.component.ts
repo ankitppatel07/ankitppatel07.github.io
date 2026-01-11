@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { trigger, transition, style, animate, keyframes } from '@angular/animations';
 import { WarpService } from '../_shared/services/warp.service';
+import { ScrollSpyDirective } from '../_shared/directives/scroll-spy.directive';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, ScrollSpyDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   animations: [
@@ -22,15 +23,21 @@ import { WarpService } from '../_shared/services/warp.service';
   ]
 })
 export class HomeComponent {
+  activeSection: string = 'about';
+
+  onSectionChange(sectionId: any) {
+    this.activeSection = sectionId;
+  }
+
   protected readonly title = signal('test-proj');
 
   public warpService = inject(WarpService);
 
   navLinks = [
-    { name: 'About', url: '#about' },
-    { name: 'Experience', url: '#experience' },
-    { name: 'Certifications', url: '#certification' },
-    { name: 'Projects', url: '#projects' }
+    { name: 'About', url: '#about', id: 'about' },
+    { name: 'Experience', url: '#experience', id: 'experience' },
+    { name: 'Certifications', url: '#certification', id: 'certifications' },
+    { name: 'Projects', url: '#projects', id: 'projects' }
   ];
 
   socials = [
@@ -62,7 +69,7 @@ export class HomeComponent {
       isLive: true,
       title: 'Release Forge: Enterprise Release Management System',
       desc: `Developed a comprehensive Release Management Dashboard designed to streamline the lifecycle of software
-              deployments. I built the application using a Node.js/PostgreSQL backend and an Angular frontend to handle
+              deployments. The application handles
               complex, multi-layered data relationships including release headers, milestones, and scope tracking.
             <br>`,
       keyFeatures: `

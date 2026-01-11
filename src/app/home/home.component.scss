@@ -300,3 +300,12 @@ p {
         color: styles.$green-1;
     }
 }
+
+.active {
+    color: styles.$white;
+
+    .nav-indicator {
+        width: 64px;
+        background-color: styles.$white;
+    }
+}

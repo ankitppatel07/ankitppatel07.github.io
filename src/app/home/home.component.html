@@ -8,7 +8,7 @@
             <nav class="nav">
                 <ul>
                     <li *ngFor="let link of navLinks">
-                        <a [href]="link.url">
+                        <a [class.active]="activeSection === link.id" [href]="link.url">
                             <span class="nav-indicator"></span>
                             <span>{{ link.name }}</span>
                         </a>
@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" appScrollSpy (sectionVisible)="onSectionChange($event)">
             <p>Hello! I'm Ankit, a Software Developer based in Philadelphia, PA. I have 6+ years of full-time experience
                 and
                 expertise in developing and maintaining web applications using Angular, TypeScript, Java, Spring, and
@@ -45,7 +45,7 @@
             </p>
         </section>
 
-        <section id="experience">
+        <section id="experience" appScrollSpy (sectionVisible)="onSectionChange($event)">
             <div *ngFor="let job of jobs" class="job-card">
                 <div class="job-period">{{ job.period }}</div>
                 <div class="job-content">
@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section id="certification">
+        <section id="certifications" appScrollSpy (sectionVisible)="onSectionChange($event)">
             <div class="certs-container">
                 <a class="certs" target="_blank"
                     href="https://cp.certmetrics.com/amazon/en/public/verify/credential/0CM3X3MBFFQ1QJSZ">
@@ -84,7 +84,7 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" appScrollSpy (sectionVisible)="onSectionChange($event)">
             <div *ngFor="let proj of projects" class="job-card" (click)="openPage(proj.projUrl)"
                 [class.isLive]="proj.isLive">
                 <div class="proj-image">
