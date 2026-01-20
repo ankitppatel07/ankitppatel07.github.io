@@ -72,7 +72,7 @@ export class HomeComponent {
       imageUrl: 'assets/bing.png'
     },
     {
-      period: '2019 — 2020',
+      period: '2013 — 2017',
       univ: 'University of Mumbai, India',
       desc: 'Bachelor of Engineering - Information Technology',
       url: 'https://mum.digitaluniversity.ac/',
