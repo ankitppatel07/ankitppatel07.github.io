@@ -309,3 +309,16 @@ p {
         background-color: styles.$white;
     }
 }
+
+
+
+.edu-image {
+    grid-column: span 2;
+    justify-self: center;
+
+    img {
+        border-radius: 15px;
+        height: 80px;
+        width: 80px;
+    }
+}

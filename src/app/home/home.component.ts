@@ -36,7 +36,8 @@ export class HomeComponent {
   navLinks = [
     { name: 'About', url: '#about', id: 'about' },
     { name: 'Experience', url: '#experience', id: 'experience' },
-    { name: 'Certifications', url: '#certification', id: 'certifications' },
+    { name: 'Education', url: '#education', id: 'education' },
+    { name: 'Certifications', url: '#certifications', id: 'certifications' },
     { name: 'Projects', url: '#projects', id: 'projects' }
   ];
 
@@ -59,6 +60,23 @@ export class HomeComponent {
       company: 'Binghamton University, SUNY',
       desc: 'I conducted usability research, improved, and optimized the web applications developed by the CS Department.',
       tech: ['JavaScript', 'HTML', 'CSS', 'SQL']
+    }
+  ];
+
+  educations = [
+    {
+      period: '2017 — 2019',
+      univ: 'Binghamton University, SUNY',
+      desc: 'Master of Science - Computer Science',
+      url: 'http://binghamton.edu/',
+      imageUrl: 'assets/bing.png'
+    },
+    {
+      period: '2019 — 2020',
+      univ: 'University of Mumbai, India',
+      desc: 'Bachelor of Engineering - Information Technology',
+      url: 'https://mum.digitaluniversity.ac/',
+      imageUrl: 'assets/mumbai-univ.png'
     }
   ];
 
