@@ -88,6 +88,19 @@ header {
     }
 }
 
+.nav-width {
+    width: 64px;
+    height: 1px;
+    background-color: styles.$white;
+    margin-right: 1rem;
+    transition: width 0.2s ease;
+}
+
+.nav-active-text {
+    color: styles.$white;
+    font-weight: 700;
+}
+
 .social-links {
     display: flex;
     gap: 35px;
@@ -301,17 +314,6 @@ p {
         color: styles.$green-1;
     }
 }
-
-.active {
-    color: styles.$white;
-
-    .nav-indicator {
-        width: 64px;
-        background-color: styles.$white;
-    }
-}
-
-
 
 .edu-image {
     grid-column: span 2;
