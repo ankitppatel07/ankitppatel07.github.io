@@ -113,7 +113,7 @@ export class HomeComponent {
       tech: ['Angular', 'TypeScript', 'Node.js', 'PostgreSQL', 'SCSS']
     },
     {
-      projUrl: '',
+      projUrl: 'https://github.com/ankitppatel07/news-app',
       imageUrl: 'assets/news-app-logo.png',
       isLive: false,
       title: 'News Application',

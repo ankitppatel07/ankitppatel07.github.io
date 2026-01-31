@@ -4,6 +4,8 @@
     position: absolute;
     top: 20px;
     right: 30px;
+    width: 60px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -36,19 +38,16 @@ header {
     }
 
     h1 {
-        color: var(--pf-h1);
         font-size: clamp(40px, 8vw, 48px);
         font-weight: 700;
     }
 
     h2 {
-        color: var(--pf-h2);
         font-size: 1.25rem;
         margin-top: 0.75rem;
     }
 
     h3 {
-        color: var(--pf-h3);
         font-size: 1.25rem;
         margin-top: 0.75rem;
     }
@@ -57,6 +56,22 @@ header {
         margin-top: 1rem;
         max-width: 300px;
     }
+}
+
+h1 {
+    color: var(--pf-h1);
+}
+
+h2 {
+    color: var(--pf-h2);
+}
+
+h3 {
+    color: var(--pf-h3);
+}
+
+p {
+    color: var(--pf-p);
 }
 
 // Navigation Links
@@ -210,10 +225,17 @@ section {
     &:hover {
         background-color: var(--pf-card-hover);
         box-shadow: var(--pf-card-shadow);
+        cursor: pointer;
 
 
         .job-title {
-            color: var(--pf-card-hover-title);
+            color: var(--pf-card-hover-title) !important;
+        }
+
+        .job-desc {
+            color: var(--pf-card-hover-desc) !important;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
         }
 
         .arrow-svg {
@@ -250,19 +272,20 @@ section {
         }
     }
 
-    .job-content {
-        grid-column: span 6;
+}
 
-        .job-title {
-            color: var(--pf-card-title);
-            font-weight: 500;
-            font-size: 1rem;
-        }
+.job-content {
+    grid-column: span 6;
 
-        .job-desc {
-            font-size: 0.875rem;
-            margin-top: 0.5rem;
-        }
+    .job-title {
+        color: var(--pf-card-title) !important;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .job-desc {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
     }
 }
 

@@ -50,6 +50,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    cursor: url('assets/custom-cursor.svg'), auto;
 }
 
 a {
@@ -63,40 +64,40 @@ ul {
 }
 
 [data-theme="light"] {
-    --pf-bg: #{ $pf-bg };
-    --pf-h1: #{ $pf-h1 };
-    --pf-h2: #{ $pf-h2 };
-    --pf-h3: #{ $pf-h3 };
-    --pf-p: #{ $pf-p };
-    --pf-a: #{ $pf-a };
+    --pf-bg: #F1FAEE;
+    --pf-h1: #1D3557;
+    --pf-h2: #1D3557;
+    --pf-h3: #1D3557;
+    --pf-p: #457B9D;
+    --pf-a: #E63946;
     --pf-hover-a: #0081A7;
-    --pf-ul: #{ $pf-ul };
-    --pf-ol: #{ $pf-ol };
+    --pf-ul: #457B9D;
+    --pf-ol: #457B9D;
 
-    --pf-chip-bg: #FED9B7;
-    --pf-chip-hover-bg: #F07167;
-    --pf-chip-text: #0081A7;
-    --pf-chip-hover-text: #FFFFFF;
+    --pf-chip-bg: #A8DADC;
+    --pf-chip-hover-bg: #457B9D;
+    --pf-chip-text: #1D3557;
+    --pf-chip-hover-text: #F1FAEE;
 
-    // --pf-card-bg: #FFFFFF;
-    --pf-card-title: #0081A7;
-    --pf-card-hover-title: #00AFB9;
-    --pf-card-desc: #005F73;
-    --pf-card-hover-desc: #000000;
-    --pf-card-shadow: rgba(0, 129, 167, 0.1);
-    --pf-card-hover: #FED9B7;
+    --pf-card-bg: #A8DADC;
+    --pf-card-title: #1D3557;
+    --pf-card-hover-title: #F1FAEE;
+    --pf-card-desc: #457B9D;
+    --pf-card-hover-desc: #A8DADC;
+    --pf-card-shadow: rgba(29, 53, 87, 0.1);
+    --pf-card-hover: #1D3557;
 
-    --pf-arrow-svg: #0081A7;
-    --pf-arrow-hover-svg: #F07167;
+    --pf-arrow-svg: #457B9D;
+    --pf-arrow-hover-svg: #E63946;
 }
 
 [data-theme="dark"] {
     --pf-bg: #{ $navy };
-    --pf-h1: #{ $lightest-slate };
-    --pf-h2: #{ $lightest-slate };
-    --pf-h3: #{ $lightest-slate };
-    --pf-p: #005F73;
-    --pf-a: #{ $white };
+    --pf-h1: #{ $slate };
+    --pf-h2: #{ $slate };
+    --pf-h3: #{ $slate };
+    --pf-p: #{ $slate };
+    --pf-a: #eb73fa;
     --pf-hover-a: #{ $green-1 };
     --pf-ul: #00AFB9;
     --pf-ol: #00AFB9;
@@ -106,7 +107,7 @@ ul {
     --pf-chip-text: #{ $green-1 };
     --pf-chip-hover-text: #{ $green-1 };
 
-    // --pf-card-bg: #FFFFFF;
+    --pf-card-bg: #FFFFFF;
     --pf-card-title: #ccd6f6;
     --pf-card-hover-title: #ccd6f6;
     --pf-card-desc: #8892b0;
@@ -115,5 +116,5 @@ ul {
     --pf-card-hover: rgba(255, 255, 255, 0.03);
 
     --pf-arrow-svg: #{ $green-1 };
-    --pf-arrow-hover-svg: #{ $white };
+    --pf-arrow-hover-svg: #eb73fa;
 }
