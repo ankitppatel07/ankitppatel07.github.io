@@ -144,11 +144,21 @@ export class HomeComponent {
 
   switchTheme() {
     this.currentTheme = this.currentTheme === 'dark' ? 'light': 'dark'
-    console.log("this.currentTheme: ", this.currentTheme)
+    console.log("Current Theme: ", this.currentTheme)
+    localStorage.setItem('theme', this.currentTheme);
+    this.setTheme();
+  }
+
+  setTheme() {
     document.body.setAttribute(
       'data-theme',
       this.currentTheme
-    )
+    );
+  }
+
+  constructor() {
+    this.currentTheme = localStorage.getItem('theme') ?? 'dark'
+    this.setTheme();
   }
 
 }
