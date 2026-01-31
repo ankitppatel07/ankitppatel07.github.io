@@ -140,4 +140,15 @@ export class HomeComponent {
     this.warpService.resetWarp();
   }
 
+  currentTheme = "dark";
+
+  switchTheme() {
+    this.currentTheme = this.currentTheme === 'dark' ? 'light': 'dark'
+    console.log("this.currentTheme: ", this.currentTheme)
+    document.body.setAttribute(
+      'data-theme',
+      this.currentTheme
+    )
+  }
+
 }

@@ -1,5 +1,12 @@
 @use '../../styles.scss';
 
+.theme-switch {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -29,19 +36,19 @@ header {
     }
 
     h1 {
-        color: styles.$lightest-slate;
+        color: var(--pf-h1);
         font-size: clamp(40px, 8vw, 48px);
         font-weight: 700;
     }
 
     h2 {
-        color: styles.$lightest-slate;
+        color: var(--pf-h2);
         font-size: 1.25rem;
         margin-top: 0.75rem;
     }
 
     h3 {
-        color: styles.$lightest-slate;
+        color: var(--pf-h3);
         font-size: 1.25rem;
         margin-top: 0.75rem;
     }
@@ -71,17 +78,18 @@ header {
             .nav-indicator {
                 width: 32px;
                 height: 1px;
-                background-color: styles.$slate;
+                // background-color: styles.$slate;
+                background-color: var(--pf-a);
                 margin-right: 1rem;
                 transition: width 0.2s ease;
             }
 
             &:hover {
-                color: styles.$white;
+                // color: styles.$white;
+                color: var(--pf-a);
 
                 .nav-indicator {
                     width: 64px;
-                    background-color: styles.$white;
                 }
             }
         }
@@ -91,13 +99,13 @@ header {
 .nav-width {
     width: 64px;
     height: 1px;
-    background-color: styles.$white;
+    background-color: var(--pf-a);
     margin-right: 1rem;
     transition: width 0.2s ease;
 }
 
 .nav-active-text {
-    color: styles.$white;
+    color: var(--pf-a);
     font-weight: 700;
 }
 
@@ -126,16 +134,25 @@ section {
     }
 }
 
+.text-link {
+    color: var(--pf-a) !important;
+}
+
+.text-link:hover {
+    color: var(--pf-hover-a) !important;
+}
+
 .resume-link {
-    color: styles.$lightest-slate;
+    color: var(--pf-a);
     font-size: 18px;
     text-align: center;
 
     &:hover {
         cursor: pointer;
-        color: styles.$green-1;
+        color: var(--pf-hover-a);
 
         .arrow-svg {
+            fill: var(--pf-arrow-hover-svg);
             transform: translate(5px, -5px);
         }
     }
@@ -160,20 +177,20 @@ section {
 
     .certs:hover {
         cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.03);
-        box-shadow: 0 10px 8px rgba(0, 0, 0, .04), 0 4px 3px rgba(0, 0, 0, .1);
+        background-color: var(--pf-card-hover);
+        box-shadow: var(--pf-card-shadow);
     }
 }
 
 .arrow-span:hover {
     cursor: pointer;
-    // color: styles.$green;
+    color: var(--pf-arrow-hover-svg);
 }
 
 .arrow-svg {
     /* This ensures the movement is smooth */
     transition: transform 0.3s ease-in-out;
-    fill: styles.$green-1;
+    fill: var(--pf-arrow-svg);
 }
 
 // Experience Cards
@@ -191,16 +208,26 @@ section {
     }
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.03);
-        box-shadow: 0 10px 8px rgba(0, 0, 0, .04), 0 4px 3px rgba(0, 0, 0, .1);
+        background-color: var(--pf-card-hover);
+        box-shadow: var(--pf-card-shadow);
 
 
         .job-title {
-            color: styles.$green-1;
+            color: var(--pf-card-hover-title);
         }
 
         .arrow-svg {
+            fill: var(--pf-arrow-hover-svg);
             transform: translate(5px, 0px);
+        }
+
+        .tag {
+            background-color: var(--pf-chip-hover-bg);
+            color: var(--pf-chip-hover-text);
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            margin: 0.5rem 0.5rem 0 0;
         }
     }
 
@@ -227,7 +254,7 @@ section {
         grid-column: span 6;
 
         .job-title {
-            color: styles.$lightest-slate;
+            color: var(--pf-card-title);
             font-weight: 500;
             font-size: 1rem;
         }
@@ -246,14 +273,16 @@ section {
     margin-top: 0.5rem;
 
     .tag {
-        background-color: styles.$green-tint;
-        color: styles.$green-1;
+        background-color: var(--pf-chip-bg);
+        color: var(--pf-chip-text);
         font-size: 0.75rem;
         padding: 0.25rem 0.75rem;
         border-radius: 999px;
         margin: 0.5rem 0.5rem 0 0;
     }
 }
+
+
 
 .live-indicator {
     display: flex;

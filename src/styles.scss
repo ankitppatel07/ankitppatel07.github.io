@@ -20,6 +20,19 @@ $green: #64ffda;
 $green-1: #5eead4;
 $green-tint: rgba(100, 255, 218, 0.1);
 
+
+//New Palette
+$pf-bg: #FDFCDC;
+$pf-h1: #0081A7;
+$pf-h2: #0081A7;
+$pf-h3: #005F73;
+$pf-p: #005F73;
+$pf-a: #F07167;
+$pf-ul: #00AFB9;
+$pf-ol: #00AFB9;
+$pf-chip-bg: #FED9B7;
+$pf-chip-text: #0081A7;
+
 /* Base Reset */
 * {
     margin: 0;
@@ -32,7 +45,7 @@ html {
 }
 
 body {
-    background-color: $navy;
+    background-color: var(--pf-bg);
     color: $slate;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
@@ -47,4 +60,60 @@ a {
 
 ul {
     list-style: none;
+}
+
+[data-theme="light"] {
+    --pf-bg: #{ $pf-bg };
+    --pf-h1: #{ $pf-h1 };
+    --pf-h2: #{ $pf-h2 };
+    --pf-h3: #{ $pf-h3 };
+    --pf-p: #{ $pf-p };
+    --pf-a: #{ $pf-a };
+    --pf-hover-a: #0081A7;
+    --pf-ul: #{ $pf-ul };
+    --pf-ol: #{ $pf-ol };
+
+    --pf-chip-bg: #FED9B7;
+    --pf-chip-hover-bg: #F07167;
+    --pf-chip-text: #0081A7;
+    --pf-chip-hover-text: #FFFFFF;
+
+    // --pf-card-bg: #FFFFFF;
+    --pf-card-title: #0081A7;
+    --pf-card-hover-title: #00AFB9;
+    --pf-card-desc: #005F73;
+    --pf-card-hover-desc: #000000;
+    --pf-card-shadow: rgba(0, 129, 167, 0.1);
+    --pf-card-hover: #FED9B7;
+
+    --pf-arrow-svg: #0081A7;
+    --pf-arrow-hover-svg: #F07167;
+}
+
+[data-theme="dark"] {
+    --pf-bg: #{ $navy };
+    --pf-h1: #{ $lightest-slate };
+    --pf-h2: #{ $lightest-slate };
+    --pf-h3: #{ $lightest-slate };
+    --pf-p: #005F73;
+    --pf-a: #{ $white };
+    --pf-hover-a: #{ $green-1 };
+    --pf-ul: #00AFB9;
+    --pf-ol: #00AFB9;
+
+    --pf-chip-bg: #{ $green-tint };
+    --pf-chip-hover-bg: #{ $green-tint };
+    --pf-chip-text: #{ $green-1 };
+    --pf-chip-hover-text: #{ $green-1 };
+
+    // --pf-card-bg: #FFFFFF;
+    --pf-card-title: #ccd6f6;
+    --pf-card-hover-title: #ccd6f6;
+    --pf-card-desc: #8892b0;
+    --pf-card-hover-desc: #8892b0;
+    --pf-card-shadow: 0 10px 8px rgba(0, 0, 0, .04), 0 4px 3px rgba(0, 0, 0, .1);
+    --pf-card-hover: rgba(255, 255, 255, 0.03);
+
+    --pf-arrow-svg: #{ $green-1 };
+    --pf-arrow-hover-svg: #{ $white };
 }

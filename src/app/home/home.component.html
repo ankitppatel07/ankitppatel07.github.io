@@ -1,3 +1,11 @@
+<div class="theme-switch" (click)="switchTheme()" title="Switch Theme">
+    @if(this.currentTheme === "dark") {
+        <img src="assets/dark-theme.svg" alt="" height="30px" width="30px">
+    } @else {
+        <img src="assets/light-theme.svg" alt="" height="30px" width="30px">
+    }
+</div>
+
 <div class="container">
     <header>
         <div>
@@ -36,7 +44,8 @@
                 that
                 solve problems and drive business value.
             </p>
-            <p>Currently, I'm a Senior Developer at <a href="https://www.tcs.com/" target="_blank">TCSL</a>,
+            <p>Currently, I'm a Senior Developer at <a class="text-link" href="https://www.tcs.com/"
+                    target="_blank">TCSL</a>,
                 specializing in developing
                 front-end user
                 interfaces that meet
@@ -137,8 +146,8 @@
                         }
                     </div>
                     <p class="job-desc" [innerHTML]="proj.desc"></p>
-                    <p>Key Features:</p>
-                    <ol [innerHTML]="proj.keyFeatures"></ol>
+                    <p class="job-desc">Key Features:</p>
+                    <ol class="job-desc" [innerHTML]="proj.keyFeatures"></ol>
 
                     <div class="tag-list">
                         <span *ngFor="let tech of proj.tech" class="tag">{{ tech }}</span>
@@ -149,9 +158,9 @@
 
         <footer>
             <p>Developed in
-                <a href="https://angular.dev/" target="_blank">Angular</a>
+                <a class="text-link" href="https://angular.dev/" target="_blank">Angular</a>
                 and hosted using
-                <a href="https://docs.github.com/en/pages" target="_blank">GitHub</a>
+                <a class="text-link" href="https://docs.github.com/en/pages" target="_blank">GitHub</a>
                 pages.
             </p>
         </footer>
