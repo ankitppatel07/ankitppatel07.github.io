@@ -50,15 +50,26 @@ export class HomeComponent {
     {
       period: '2020 — Present',
       title: 'Senior Software Developer',
-      company: 'TCSL - NYL',
-      desc: 'I develop frontends for NYL-GBS applications and POCs that use Generative AI.',
+      company: 'TCSL - NYL GBS',
+      desc: `
+                <li>
+                  Founding Developer, NYL GBS – AI Services Division
+                </li>
+                <li>
+                  I develop frontend UIs for Generative AI applications and POCs.
+                </li>
+              `,
       tech: ['Angular', 'TypeScript', 'Micro-frontends', 'SCSS', 'Jest']
     },
     {
       period: '2019 — 2020',
       title: 'UI Intern',
       company: 'Binghamton University, SUNY',
-      desc: 'I conducted usability research, improved, and optimized the web applications developed by the CS Department.',
+      desc: `
+                <li>
+                  I conducted usability research, improved, and optimized the web applications developed by the CS Department.
+                </li>
+              `,
       tech: ['JavaScript', 'HTML', 'CSS', 'SQL']
     }
   ];
@@ -143,7 +154,7 @@ export class HomeComponent {
   currentTheme = "dark";
 
   switchTheme() {
-    this.currentTheme = this.currentTheme === 'dark' ? 'light': 'dark'
+    this.currentTheme = this.currentTheme === 'dark' ? 'light' : 'dark'
     console.log("Current Theme: ", this.currentTheme)
     localStorage.setItem('theme', this.currentTheme);
     this.setTheme();

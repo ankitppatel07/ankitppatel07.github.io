@@ -60,14 +60,14 @@
                 <div class="job-period">{{ job.period }}</div>
                 <div class="job-content">
                     <div class="job-title">{{ job.title }} · {{ job.company }}</div>
-                    <p class="job-desc">{{ job.desc }}</p>
+                    <p class="job-desc" [innerHTML]="job.desc"></p>
                     <div class="tag-list">
                         <span *ngFor="let tech of job.tech" class="tag">{{ tech }}</span>
                     </div>
                 </div>
             </div>
             <div class="resume-link">
-                <a href="https://drive.google.com/file/d/11w_6JsoBUJCJOHltYeKI7N3w83eKACj_/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1FlMj1xhGMK4_D1HnQdzA1ReNq5BjVvFh/view?usp=sharing"
                     target="_blank">View Full
                     Resume
                     <span class="arrow-span">
@@ -146,8 +146,8 @@
                         }
                     </div>
                     <p class="job-desc" [innerHTML]="proj.desc"></p>
-                    <p class="job-desc">Key Features:</p>
-                    <ol class="job-desc" [innerHTML]="proj.keyFeatures"></ol>
+                    <!-- <p class="job-desc">Key Features:</p>
+                    <ol class="job-desc" [innerHTML]="proj.keyFeatures"></ol> -->
 
                     <div class="tag-list">
                         <span *ngFor="let tech of proj.tech" class="tag">{{ tech }}</span>
