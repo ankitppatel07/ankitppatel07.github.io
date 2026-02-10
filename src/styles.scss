@@ -68,27 +68,30 @@ ul {
     --pf-h1: #1D3557;
     --pf-h2: #1D3557;
     --pf-h3: #1D3557;
-    --pf-p: #457B9D;
-    --pf-a: #E63946;
+    --pf-p: #3f7293;
+    --pf-span: #3f7293;
+    --pf-a: #db0414;
     --pf-hover-a: #0081A7;
-    --pf-ul: #457B9D;
-    --pf-ol: #457B9D;
+    --pf-ul: #3f7293;
+    --pf-ol: #3f7293;
 
     --pf-chip-bg: #A8DADC;
     --pf-chip-hover-bg: #457B9D;
     --pf-chip-text: #1D3557;
-    --pf-chip-hover-text: #F1FAEE;
+    --pf-chip-hover-text: #FFFFFF;
 
     --pf-card-bg: #A8DADC;
     --pf-card-title: #1D3557;
     --pf-card-hover-title: #F1FAEE;
     --pf-card-desc: #457B9D;
     --pf-card-hover-desc: #A8DADC;
+    --pf-card-sub-heading: #61687c;
+    --pf-card-sub-heading-hover: #c5d0f2;
     --pf-card-shadow: rgba(29, 53, 87, 0.1);
     --pf-card-hover: #1D3557;
 
-    --pf-arrow-svg: #457B9D;
-    --pf-arrow-hover-svg: #E63946;
+    --pf-arrow-svg: #3f7293;
+    --pf-arrow-hover-svg: #db0414;
 }
 
 [data-theme="dark"] {
@@ -97,6 +100,7 @@ ul {
     --pf-h2: #{ $slate };
     --pf-h3: #{ $slate };
     --pf-p: #{ $slate };
+    --pf-span: #{ $slate };
     --pf-a: #eb73fa;
     --pf-hover-a: #{ $green-1 };
     --pf-ul: #00AFB9;
@@ -112,6 +116,8 @@ ul {
     --pf-card-hover-title: #ccd6f6;
     --pf-card-desc: #8892b0;
     --pf-card-hover-desc: #8892b0;
+    --pf-card-sub-heading: #{ $slate };
+    --pf-card-sub-heading-hover: #{ $slate };
     --pf-card-shadow: 0 10px 8px rgba(0, 0, 0, .04), 0 4px 3px rgba(0, 0, 0, .1);
     --pf-card-hover: rgba(255, 255, 255, 0.03);
 

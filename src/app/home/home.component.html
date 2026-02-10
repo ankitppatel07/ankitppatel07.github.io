@@ -19,7 +19,9 @@
                         <a [class.active]="activeSection === link.id" [href]="link.url">
                             <span [class.nav-indicator]="activeSection !== link.id"
                                 [class.nav-width]="activeSection === link.id"></span>
-                            <span [class.nav-active-text]="activeSection === link.id">{{ link.name }}</span>
+                            <span [class.nav-active-text]="activeSection === link.id">
+                                {{ link.name }}
+                            </span>
                         </a>
                     </li>
                 </ul>

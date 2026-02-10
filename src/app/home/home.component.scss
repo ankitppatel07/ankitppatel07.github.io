@@ -251,6 +251,10 @@ section {
             border-radius: 999px;
             margin: 0.5rem 0.5rem 0 0;
         }
+
+        .job-period {
+            color: var(--pf-card-sub-heading-hover);
+        }
     }
 
     .job-period {
@@ -258,7 +262,7 @@ section {
         font-size: 0.75rem;
         font-weight: 600;
         text-transform: uppercase;
-        color: styles.$slate;
+        color: var(--pf-card-sub-heading);
     }
 
     .proj-image {
@@ -365,6 +369,10 @@ p {
     a:hover {
         color: styles.$green-1;
     }
+}
+
+span {
+    color: var(--pf-span);
 }
 
 .edu-image {
